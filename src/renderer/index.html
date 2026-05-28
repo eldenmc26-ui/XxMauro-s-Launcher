@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XxMauro's Launcher</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="theme-minecraft">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-dot"></span>
+          <div>
+            <h1>XxMauro's Launcher</h1>
+            <p>Community Edition</p>
+          </div>
+        </div>
+
+        <div class="mode-switch" aria-label="Selettore modalità">
+          <button class="mode-btn is-active" data-mode="minecraft">Minecraft</button>
+          <button class="mode-btn" data-mode="roblox">Roblox</button>
+        </div>
+
+        <div class="sidebar-card">
+          <h2>Stato account</h2>
+          <p id="mode-account-tip">Microsoft / Offline disponibile</p>
+        </div>
+
+        <div class="sidebar-card compact">
+          <h2>Preferiti rapidi</h2>
+          <ul id="quick-favorites">
+            <li>SkyBlock Realm</li>
+            <li>Bedwars Arena</li>
+            <li>Build Battle</li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow" id="eyebrow">Minecraft Mode</p>
+            <h2 id="screen-title">Gestione account e avvio</h2>
+          </div>
+          <button class="play-btn" id="play-btn">PLAY MINECRAFT</button>
+        </header>
+
+        <section class="grid">
+          <article class="card">
+            <h3>Account Minecraft</h3>
+            <p>Accedi con Microsoft oppure usa profilo offline/craccato.</p>
+            <div class="actions">
+              <button class="ghost">Login Microsoft</button>
+              <button class="ghost">Profilo Offline</button>
+            </div>
+          </article>
+
+          <article class="card" id="secondary-account-card">
+            <h3>Account Roblox</h3>
+            <p>Login richiesto per avviare e usare funzionalità social.</p>
+            <div class="actions">
+              <button class="ghost">Login Roblox</button>
+              <button class="ghost">Gestisci Sessione</button>
+            </div>
+          </article>
+
+          <article class="card wide" id="mode-feature-card">
+            <h3>Server Minecraft Community</h3>
+            <p>Avvio rapido verso i server principali con profilo pre-selezionato.</p>
+            <div class="pill-row">
+              <span class="pill">play.xxmauro.net</span>
+              <span class="pill">modpack: community-plus</span>
+              <span class="pill">version: 1.20.1</span>
+            </div>
+          </article>
+
+          <article class="card wide" id="social-card">
+            <h3>Stato social Roblox</h3>
+            <p>Quando sei in modalità Roblox puoi vedere amici online e joinare al volo.</p>
+            <div class="pill-row">
+              <span class="pill">friends online: 0</span>
+              <span class="pill">party: disconnesso</span>
+              <span class="pill">quick join: pronto</span>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "xxmauros-launcher",
+  "version": "0.1.0",
+  "description": "XxMauro's Launcher - Electron UI for Minecraft and Roblox",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^31.0.2"
+  }
+}
